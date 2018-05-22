@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 
+require('./models/User');
 require('./services/passport');
 require('./routes/AuthRoutes')(app);
 
